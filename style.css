@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.rowheader {
+    background-color: rgb(255, 255, 255);
+    height: 110px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    min-width: 100%;
+}
+
+.logoimg {
+    margin-left: 3%;
+    width: 220px;
+    height: 110px;
+    z-index: 85;
+}
+
+.liheader {
+    padding: 35px 0;
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin-right: 20px;
+}
+
+.liheader>li>a {
+    color: rgb(8, 8, 8);
+    text-decoration-line: none;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.liheader>li>a:hover {
+    color: rgb(97, 93, 93);
+}
+
+.burgermenu {
+    text-align: right;
+    display: none;
+    margin-top: -70px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.burgeritems {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    max-height: 100%;
+    margin-bottom: -100px;
+    position: fixed;
+    top: 0;
+    z-index: 80;
+}
+
+.burgeritems li {
+    list-style-type: none;
+    width: 100%;
+    padding: 15px;
+}
+
+.burgeritems a {
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mypic {
+    width: 100%;
+    height: 40% !important;
+    margin-top: 100px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.aboutme {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    padding: 3% 27%;
+    color: #888;
+}
+
+.head {
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.skills {
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.skillpercent {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #888;
+    float: right;
+    margin-right: 20px;
+}
+
+#sql {
+    margin-top: 10px;
+    width: 80%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#c {
+    margin-top: 10px;
+    width: 75%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#net {
+    margin-top: 10px;
+    width: 70%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#js {
+    margin-top: 10px;
+    width: 70%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#jquery {
+    margin-top: 10px;
+    width: 80%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#html {
+    margin-top: 10px;
+    width: 95%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#css {
+    margin-top: 10px;
+    width: 95%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#react {
+    margin-top: 10px;
+    width: 40%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#sass {
+    margin-top: 10px;
+    width: 85%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#asp {
+    margin-top: 10px;
+    width: 80%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#skillinfo {
+    padding: 200px 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: #888;
+}
+
+.services {
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.service {
+    text-align: center;
+}
+
+.titleofservice {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px;
+    font-family: 'Caveat', cursive;
+}
+
+.serviceinfo {
+    color: #888;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.works {
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.work {
+    text-align: center;
+}
+
+.work:hover .singleworkimage {
+    opacity: 0.05;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.singleworkimage {
+    height: 100%;
+    width: 90%;
+}
+
+.titleofwork p {
+    position: absolute;
+    font-size: 30px;
+    display: none;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.work:hover .titleofwork p {
+    display: block;
+    transition: display 0.5s;
+    cursor: pointer;
+}
+
+.rowfooter {
+    min-height: 300px;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.logofooter {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.copyright {
+    color: white;
+    margin-top: 7%;
+}
+
+.servicesfooter {
+    text-align: center;
+    margin-top: 6%;
+}
+
+.servicesfooter li {
+    list-style-type: none;
+    color: white;
+}
+
+.lifirst {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.socialfooter {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+
+.socialfooter img {
+    margin: 10px;
+}
+
+.contactme {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.textforcontact {
+    margin-top: -10px;
+    color: #888;
+}
+
+#contact {
+    margin-bottom: -10px;
+}
+
+.contactmetext {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Satisfy', cursive;
+}
+
+.contactlogo {
+    height: 40px;
+    width: 40px;
+    margin-right: 250px;
+    margin-bottom: -100px;
+}
+
+.contacthead {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inputs {
+    display: block;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: solid thin rgb(211, 210, 214);
+    padding: 10px;
+}
+
+#textarea {
+    width: 100%;
+    margin: 10px;
+    border: none;
+    border-bottom: solid thin rgb(211, 210, 214);
+    min-height: 100px;
+    padding: 10px;
+}
+
+.btnsend {
+    color: white;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    border: none;
+    font-weight: 600;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-left: 70%;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.form {
+    margin: 30px;
+}
+
+.workimage {
+    width: 100%;
+    height: 25%;
+}
+
+.workimage1 {
+    width: 50%;
+    height: 40%;
+}
+
+.workinfo {
+    padding: 15%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+}
+
+.skillstext {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.boxes {
+    display: flex;
+}
+
+.skillbox {
+    max-width: 100%;
+    min-height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.skillbox:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#backtotop {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+    height: 37px;
+    width: 40px;
+    text-align: center;
+}
+
+/*Modal for workdetail*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Error Page*/
+
+.error {
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.btnerror {
+    background-color: rgb(233, 20, 20);
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.btnerror a {
+    color: white;
+    text-decoration-line: none;
+}
+
+@media screen and (max-width:990px) {
+    .burgermenu {
+        display: block;
+    }
+    .liheader {
+        display: none;
+    }
+    .burgeritems {
+        display: none;
+    }
+    .btnsend {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+    .inputs {
+        margin: 0;
+    }
+    #textarea {
+        margin: 0;
+    }
+    #skillinfo {
+        padding: 10%;
+    }
+    .aboutme {
+        padding: 5%;
+    }
+    .workimage {
+        width: 100%;
+    }
+    .workinfo {
+        padding: 0;
+    }
+    .boxes {
+        display: block;
+    }
+    .logoimg {
+        margin-left: 0;
+    }
+    .work:hover .titleofwork {
+        display: none;
+    }
+    .work:hover .singleworkimage {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .burgeritems {
+        display: none !important;
+    }
+}
