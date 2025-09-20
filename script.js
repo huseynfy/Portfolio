@@ -110,7 +110,7 @@ works.forEach(work=>{
 function updateDate(){
   let date = new Date();
   let year = date.getFullYear();
-  document.getElementById('copyright').innerHTML = '© ' + year + ' Huseyn Yusifov. All rights reserved.';
+  document.getElementById('copyright').innerHTML = '© 2020 - ' + year + ' Huseyn Yusifov. All rights reserved.';
 }
 
 updateDate();
