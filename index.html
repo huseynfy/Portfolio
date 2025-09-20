@@ -1,302 +1,1366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Huseyn Yusifov">
-    <meta name="description" content="Portfolio web site of Huseyn Yusifov">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Huseyn Yusifov" />
+    <meta
+      name="description"
+      content="The portfolio web site of Huseyn Yusifov"
+    />
     <title>Huseyn</title>
-    <link rel="icon" href="img/appletouch.png">
-    <link rel="apple-touch-icon" href="img/appletouch.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="img/appletouch.png" />
+    <link rel="apple-touch-icon" href="img/appletouch.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5ZP3EMCB8H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-5ZP3EMCB8H");
+    </script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:ital,wght@1,600&family=Satisfy&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <header>
-        <div class="container-fluid">
-            <div class="row justify-content-between rowheader">
-                <div class="col-lg-6 col-md-6 col-sm-6 logoimage">
-                    <a href="index.html"><img src="img/HY_logo.png" class="logoimg"></a>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="burgermenu">
-                        <img src="img/menu.svg" width="30px" height="30px">
-                    </div>
-                    <ul class="liheader">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#contacts">Contact</a></li>
-                    </ul>
-                </div>
+  <body>
+    <header class="sections">
+      <div class="container-fluid">
+        <div class="row justify-content-between rowheader">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <a href="/"><img src="img/HY_logo.png" class="logoimg" /></a>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="burgermenu">
+              <input type="checkbox" name="checkbox" id="togglemenuicon" />
+              <label for="togglemenuicon" id="labelformenuicon"></label>
             </div>
-            <div class="row">
-                <div class="burgeritems">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#contacts">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="liheader">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="row">
+          <div class="burgeritems">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
-    <section style="overflow: hidden;">
-        <div class="container-fluid">
-            <div class="row">
-                <img src="img/HY.jpg" class="mypic" height="400px" width="1455px">
-            </div>
+    <section class="sections">
+      <div class="container-fluid">
+        <div class="row">
+          <img src="img/HY.jpg" class="mypic" alt="Huseyn" title="Huseyn Yusifov" />
         </div>
+      </div>
     </section>
-    <section style="overflow: hidden;" id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 info">
-                    <h2 class="head">Hi</h2>
-                    <div class="aboutme">
-                        <meta name="keywords" content="Huseyn Yusifov">
-                        <p>My name is Huseyn Yusifov and I'm a Web Developer based in Baku, Azerbaijan.I have knowledge
-                            in C#, .NET Core, HTML 5, CSS 3, JavaScript, React, jQuery. </p>
-                    </div>
-                </div>
+    <section class="sections" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 info">
+            <h2 class="head">Hi</h2>
+            <div class="aboutme">
+              <p>
+                I am Huseyn Yusifov, a seasoned frontend developer with five
+                years of hands-on experience, and I have successfully completed
+                my master's degree in San Francisco, CA. Specializing in
+                crafting elegant and user-friendly interfaces, I excel in
+                designing simple yet aesthetically pleasing UIs. My skill set
+                encompasses HTML5, CSS3, Sass, JavaScript, React JS, jQuery, and
+                ASP.NET Core.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section style="overflow: hidden;" id="skills">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 skills">
-                    <h2 class="head">About My Skills</h2>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <p id="skillinfo">I completed several projects using C#, .NET Core, HTML 5, CSS 3,
-                        JavaScript, React and other languages together below you can see the projects that were
-                        completely written by me using these languages. I also know how to work with API's... </p>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <img src="img/html.svg" height="35px" width="35px">
-                    <span class="skillpercent">95%</span>
-                    <div id="html">
-                    </div>
-                    <img src="img/css.svg" height="35px" width="35px">
-                    <span class="skillpercent">95%</span>
-                    <div id="css">
-                    </div>
-                    <img src="img/js.svg" height="30px" width="35px">
-                    <span class="skillpercent">70%</span>
-                    <div id="js">
-                    </div>
-                    <img src="img/react.svg" height="35px" width="35px">
-                    <span class="skillpercent">40%</span>
-                    <div id="react">
-                    </div>
-                    <img src="img/jquery.png" height="35px" width="35px">
-                    <span class="skillpercent">80%</span>
-                    <div id="jquery">
-                    </div>
-                    <img src="img/sass.svg" height="35px" width="35px">
-                    <span class="skillpercent">85%</span>
-                    <div id="sass">
-                    </div>
-                    <img src="img/csharp.svg" height="35px" width="35px">
-                    <span class="skillpercent">75%</span>
-                    <div id="c">
-                    </div>
-                    <img src="img/net.png" height="35px" width="35px">
-                    <span class="skillpercent">70%</span>
-                    <div id="net">
-                    </div>
-                    <img src="img/Asp.png" height="35px" width="35px">
-                    <span class="skillpercent">80%</span>
-                    <div id="asp">
-                    </div>
-                    <img src="img/mssql.svg" height="35px" width="35px">
-                    <span class="skillpercent">80%</span>
-                    <div id="sql">
-                    </div>
-                </div>
+    <section class="sections" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 skills">
+            <h2 class="head">About My Skills</h2>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div id="skillinfo">
+              <p>
+                I have completed several projects using React JS, HTML 5, CSS 3,
+                Sass, JavaScript, ASP.NET Core, MSSQL, and jQuery. Below you can
+                see my projects that were developed using these technologies. I
+                have experience in working with Git, Rest API, & AJAX.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 skillIcons text-center">
+            <img src="img/html.svg" />
+            <img src="img/css.svg" />
+            <img src="img/js.svg" />
+            <img src="img/react.svg" />
+            <img src="img/TS.svg" />
+            <img src="img/sass.svg" />
+            <img src="img/csharp.svg" />
+            <img src="img/netmvc.png" />
+            <img src="img/mssql.svg" />
+          </div>
         </div>
+      </div>
     </section>
-    <section style="overflow: hidden;" id="services">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 services">
-                    <h2 class="head">Services</h2>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 service">
-                    <img src="img/webdesign.svg" width="50px" height="50px">
-                    <p class="titleofservice">Web Design</p>
-                    <p class="serviceinfo">I can write any kind of website and open to client's recommendations for the
-                        UI of website</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 service">
-                    <img src="img/responsive.svg" width="50px" height="50px">
-                    <p class="titleofservice">Responsiveness</p>
-                    <p class="serviceinfo">As today, many people access internet through their mobile phones, there is a
-                        necessity to design website mobile friendly </p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 service">
-                    <img src="img/web.svg" width="50px" height="50px">
-                    <p class="titleofservice">Web Development</p>
-                    <p class="serviceinfo">I can develop any kind of web application with the help of above mentioned
-                        software tools
-                    </p>
-                </div>
+    <section class="sections" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 services">
+            <h2 class="head">Services</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 service">
+            <img src="img/web.png" width="60px" height="60px" />
+            <p class="titleofservice">Web Development/Design</p>
+            <div class="serviceinfo">
+              <p>
+                I craft visually stunning websites with seamless functionality,
+                tailored to meet the unique needs of each client.
+              </p>
             </div>
-        </div>
-    </section>
-    <section style="overflow: hidden;" id="works">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 works">
-                    <h2 class="head">My Works</h2>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="work">
-                        <a id="work"> <img class="singleworkimage" src="img/shop.jpeg" width="350px" height="250px"></a>
-                        <div class="titleofwork">
-                            <p>E-Commerce</p>
-                        </div>
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <section style="overflow: hidden;">
-                                    <div class="container-fluid">
-                                        <div class="row mt-5">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-                                                <p class="head">E-Commerce</p>
-                                            </div>
-                                            <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
-                                                <img src="img/shop.jpeg" height="50px" width="100px" class="workimage">
-                                                <img src="img/shop1.jpeg" height="50px" width="100px"
-                                                    class="mt-5 workimage">
-                                                <img src="img/shop2.jpeg" height="100px" width="50px"
-                                                    class="mt-5 mb-5 workimage1">
-                                            </div>
-                                            <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
-                                                <p class="workinfo">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                    elit. Praesentium, nemo nulla ex soluta atque quidem blanditiis
-                                                    molestiae recusandae odio tempore dolores repudiandae id reiciendis
-                                                    cum eligendi fugit pariatur non doloremque? Lorem ipsum, dolor sit
-                                                    amet consectetur adipisicing elit. Necessitatibus aut aliquam vitae
-                                                    ullam ad. Sed quisquam optio iusto est dignissimos voluptatem</p>
-                                                <p class="skillstext">Skills</p>
-                                                <div class="boxes justify-content-center">
-                                                    <div class="skillbox">HTML5</div>
-                                                    <div class="skillbox">CSS3</div>
-                                                    <div class="skillbox">.NET Core</div>
-                                                    <div class="skillbox">C#</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="work">
-                        <a id="flower"><img class="singleworkimage" src="img/flower.jpeg" width="350px"
-                                height="250px"></a>
-                        <div class="titleofwork">
-                            <p>Flower Shopping</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="work">
-                        <a id="winform"><img class="singleworkimage" src="img/winformapp.png" width="350px"
-                                height="250px"></a>
-                        <div class="titleofwork">
-                            <p>Windows App</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="work">
-                        <a id="meme"><img class="singleworkimage" src="img/Meme.jpeg" width="350px" height="250px"></a>
-                        <div class="titleofwork">
-                            <p>Meme Generator</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 service">
+            <img src="img/seo.svg" width="60px" height="60px" />
+            <p class="titleofservice">SEO</p>
+            <div class="serviceinfo">
+              <p>
+                As a web developer, I optimize websites for better search engine
+                visibility, boosting organic traffic through SEO services.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 service">
+            <img src="img/shopify.svg" width="60px" height="60px" />
+            <p class="titleofservice">Shopify Store Development</p>
+            <div class="serviceinfo">
+              <p>
+                I specialize in Shopify store development, crafting custom
+                e-commerce solutions to drive sales and enhance the online
+                shopping experience.
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
-    <section style="overflow: hidden;">
-        <div class="container-fluid">
-            <div class="row mt-5" id="contacts">
-                <div class="col-lg-6 col-md-12 col-sm-12 contactme">
-                    <p class="contactmetext" id="contact">Contact me</p>
+    <section class="sections" id="works">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 works">
+            <h2 class="head">My Works</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-lg-5 mt-md-5">
+            <div class="work">
+              <a id="biab" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/biab.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Economics NGO</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modalbiab" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closebiab">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Economics NGO</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/biab.png" class="workimage shadow" />
+                      <img src="img/biab1.png" class="mt-5 workimage shadow" />
+                      <img
+                        src="img/biab2.png"
+                        class="mt-5 mb-5 workimage1 shadow"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          This website was developed by me from scratch.
+                          Client-side and server-side codes were written by me.
+                          I worked closely with the design team while developing
+                          the website. It has its own content management system
+                          for editing,adding, and deleting data on the website.
+                          <br />
+                          <a href="http://ekonomiks.az" target="_blank"
+                            >Link to the website</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">HTML/CSS</div>
+                        <div class="skillbox">JavaScript</div>
+                        <div class="skillbox">ASP.NET Core</div>
+                        <div class="skillbox">MSSQL</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a id="glass" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/GlassPass.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>GlassPass</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modalglass" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeglass">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>GlassPass</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/GlassPass.png" class="workimage shadow" />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          Several pages of the website including the landing
+                          page were designed and developed by me. <br />
+                          <a href="https://glasspass.co" target="_blank"
+                            >Link to the website</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">React Js</div>
+                        <div class="skillbox">JavaScript</div>
+                        <div class="skillbox">Next.js</div>
+                        <div class="skillbox">CSS</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/shopify.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Fafa Diem (Shopify)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Fafa Diem (Shopify)</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/shopify.png" class="workimage shadow" />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          A Shopify Store was developed by me and it is live.<br />
+                          <a
+                            href="https://fafadiem.com"
+                            target="_blank"
+                            >Link to the store</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">Shopify</div>
+                        <div class="skillbox">CSS</div>
+                        <div class="skillbox">HTML</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a id="locat" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/locat.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Cat Tracking (Mobile Web App)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modallocat" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closelocat">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Cat Tracking (Mobile Web App)</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/locat1.png" class="workimageMobile" />
+                      <img src="img/locat2.png" class="workimageMobile" />
+                      <img src="img/locat3.png" class="workimageMobile" />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          This mobile web application was designed and developed
+                          by me for a class project. Users are able to add cats
+                          to their profile & to track them after sign-in or
+                          sign-up. Adding, editing, and deleting functionalities
+                          are working seamlessly.<br />
+                          <a
+                            href="http://huseynfy-001-site5.btempurl.com/aau/wnm617/yusifov.huseyn/"
+                            target="_blank"
+                            >Link to the project (use it on a mobile device)</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">HTML</div>
+                        <div class="skillbox">CSS</div>
+                        <div class="skillbox">jQuery</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a id="crypto" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/crypto1.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Crypto Dashboard (React)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modalcrypto" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closecrypto">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Crypto Dashboard</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/crypto1.png" class="workimage shadow" />
+                      <img
+                        src="img/crypto2.png"
+                        class="mt-5 workimage shadow"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          A crypto dashboard built by me using Rapid API, Redux
+                          Toolkit, and React Hooks.
+                          <br />
+                          <a
+                            href="https://crypto-dashboard-999.netlify.app/"
+                            target="_blank"
+                            >Link to the dashboard app</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">React</div>
+                        <div class="skillbox">Redux Toolkit</div>
+                        <div class="skillbox">Chart JS</div>
+                        <div class="skillbox">API</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/weather.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Weather App (React)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Weather App (React)</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/weather.png" class="workimage shadow" />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          A Weather app was made by me to practice my React and REST API skills
+                          <br />
+                          <a href="https://weather-app-999.netlify.app/" target="_blank"
+                            >Link to the website</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">HTML 5</div>
+                        <div class="skillbox">REST API</div>
+                        <div class="skillbox">React</div>
+                        <div class="skillbox">Material UI</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/shop.jpeg"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>E-Commerce</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>E-Commerce</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/shop.jpeg" class="workimage shadow" />
+                      <img src="img/shop1.jpeg" class="mt-5 workimage shadow" />
+                      <img
+                        src="img/shop2.jpeg"
+                        class="mt-5 mb-5 workimage1 shadow"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          I developed this website using HTML 5, CSS 3,
+                          JavaScript, ASP.NET Core 3.1, and MSSQL.
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">HTML 5</div>
+                        <div class="skillbox">CSS 3</div>
+                        <div class="skillbox">JavaScript</div>
+                        <div class="skillbox">ASP.NET Core</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a id="php" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/php2.png"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>E-Shopping</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modalphp" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closephp">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>E-Shopping</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/php2.png" class="workimage shadow" />
+                      <img src="img/php1.png" class="mt-5 workimage shadow" />
+                      <img
+                        src="img/php3.png"
+                        class="mt-5 mb-5 workimage shadow"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          This website was designed and developed by me for a
+                          class project. <br />
+                          <a
+                            href="http://huseynfy-001-site16.btempurl.com/"
+                            target="_blank"
+                            >Link to the website</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">HTML/CSS</div>
+                        <div class="skillbox">JavaScript</div>
+                        <div class="skillbox">PHP</div>
+                        <div class="skillbox">MYSQL</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+            <div class="work">
+              <a id="flower" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/flower.jpeg"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Flower Shop</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modalflower" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeflower">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Flower Shop</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/flower.jpeg" class="workimage shadow" />
+                      <img
+                        src="img/flower1.jpeg"
+                        class="mt-5 workimage shadow"
+                      />
+                      <img
+                        src="img/flower2.jpeg"
+                        class="mt-5 mb-5 workimage1 shadow"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          A website for flower shopping; It was developed using
+                          these technologies: HTML 5, CSS 3, Sass, and jQuery.
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">HTML 5</div>
+                        <div class="skillbox">CSS 3</div>
+                        <div class="skillbox">JavaScript</div>
+                        <div class="skillbox">Sass</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+       
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5">
+            <div class="work">
+              <a id="meme" title="Click me!">
+                <img
+                  class="singleworkimage shadow"
+                  src="img/meme.jpeg"
+                  width="560px"
+                  height="320px"
+                />
+                <div class="titleofwork">
+                  <p>Meme Generator (React JS)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="modalmeme" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closememe">&times;</span>
+              <section style="overflow: hidden">
+                <div class="container-fluid">
+                  <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="head">
+                        <p>Meme Generator (React)</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <img src="img/meme.jpeg" class="workimage shadow" />
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
+                      <div class="workinfo">
+                        <p>
+                          a Meme Generator app was developed using React JS and
+                          Rest API <br />
+                          <a
+                            href="https://meme-generator-999.netlify.app/"
+                            target="_blank"
+                            >Link to the project</a
+                          >
+                        </p>
+                      </div>
+                      <p class="skillstext">Skills</p>
+                      <div class="boxes justify-content-center">
+                        <div class="skillbox">React</div>
+                        <div class="skillbox">JavaScript</div>
+                        <div class="skillbox">REST API</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sections">
+      <div class="container">
+        <div class="row" id="blog">
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center skills">
+            <h2 class="head">Instagram Blog</h2>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 text-center instabox">
+            <blockquote
+              class="instagram-media"
+              data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/CV1p_ShrRz2/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style="
+                background: #fff;
+                border: 0;
+                border-radius: 3px;
+                box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                margin: 1px;
+                max-width: 540px;
+                min-width: 326px;
+                padding: 0;
+                width: 99.375%;
+                width: -webkit-calc(100% - 2px);
+                width: calc(100% - 2px);
+              "
+            >
+              <div style="padding: 16px">
+                <a
+                  href="https://www.instagram.com/p/CV1p_ShrRz2/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  style="
+                    background: #ffffff;
+                    line-height: 0;
+                    padding: 0 0;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 100%;
+                  "
+                  target="_blank"
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                    "
+                  >
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        flex-grow: 0;
+                        height: 40px;
+                        margin-right: 14px;
+                        width: 40px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 100px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 60px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div
+                    style="
+                      display: block;
+                      height: 50px;
+                      margin: 0 auto 12px;
+                      width: 50px;
+                    "
+                  >
+                    <svg
+                      width="50px"
+                      height="50px"
+                      viewBox="0 0 60 60"
+                      version="1.1"
+                      xmlns="https://www.w3.org/2000/svg"
+                      xmlns:xlink="https://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          transform="translate(-511.000000, -20.000000)"
+                          fill="#000000"
+                        >
+                          <g>
+                            <path
+                              d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div
+                      style="
+                        color: #3897f0;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 550;
+                        line-height: 18px;
+                      "
+                    >
+                      View this post on Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      margin-bottom: 14px;
+                      align-items: center;
+                    "
+                  >
                     <div>
-                        <img src="img/call.svg" class="contactlogo">
-                        <p class="contacthead">Phone</p>
-                        <p class="textforcontact">+994502059939</p>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          height: 12.5px;
+                          width: 12.5px;
+                          transform: translateX(0px) translateY(7px);
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          height: 12.5px;
+                          transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                          width: 12.5px;
+                          flex-grow: 0;
+                          margin-right: 14px;
+                          margin-left: 2px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          height: 12.5px;
+                          width: 12.5px;
+                          transform: translateX(9px) translateY(-18px);
+                        "
+                      ></div>
                     </div>
+                    <div style="margin-left: 8px">
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 20px;
+                          width: 20px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          width: 0;
+                          height: 0;
+                          border-top: 2px solid transparent;
+                          border-left: 6px solid #f4f4f4;
+                          border-bottom: 2px solid transparent;
+                          transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                        "
+                      ></div>
+                    </div>
+                    <div style="margin-left: auto">
+                      <div
+                        style="
+                          width: 0px;
+                          border-top: 8px solid #f4f4f4;
+                          border-right: 8px solid transparent;
+                          transform: translateY(16px);
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          flex-grow: 0;
+                          height: 12px;
+                          width: 16px;
+                          transform: translateY(-4px);
+                        "
+                      ></div>
+                      <div
+                        style="
+                          width: 0;
+                          height: 0;
+                          border-top: 8px solid #f4f4f4;
+                          border-left: 8px solid transparent;
+                          transform: translateY(-4px) translateX(8px);
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      flex-grow: 1;
+                      justify-content: center;
+                      margin-bottom: 24px;
+                    "
+                  >
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        margin-bottom: 6px;
+                        width: 224px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        width: 144px;
+                      "
+                    ></div></div
+                ></a>
+                <p
+                  style="
+                    color: #c9c8cd;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 0;
+                    margin-top: 8px;
+                    overflow: hidden;
+                    padding: 8px 0 7px;
+                    text-align: center;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  "
+                >
+                  <a
+                    href="https://www.instagram.com/p/CV1p_ShrRz2/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: normal;
+                      line-height: 17px;
+                      text-decoration: none;
+                    "
+                    target="_blank"
+                    >A post shared by @yusifov.coding</a
+                  >
+                </p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 text-center instabox">
+            <blockquote
+              class="instagram-media"
+              data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/CV62eOMrTlX/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style="
+                background: #fff;
+                border: 0;
+                border-radius: 3px;
+                box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                margin: 1px;
+                max-width: 540px;
+                min-width: 326px;
+                padding: 0;
+                width: 99.375%;
+                width: -webkit-calc(100% - 2px);
+                width: calc(100% - 2px);
+              "
+            >
+              <div style="padding: 16px">
+                <a
+                  href="https://www.instagram.com/p/CV62eOMrTlX/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  style="
+                    background: #ffffff;
+                    line-height: 0;
+                    padding: 0 0;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 100%;
+                  "
+                  target="_blank"
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                    "
+                  >
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        flex-grow: 0;
+                        height: 40px;
+                        margin-right: 14px;
+                        width: 40px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 100px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 60px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div
+                    style="
+                      display: block;
+                      height: 50px;
+                      margin: 0 auto 12px;
+                      width: 50px;
+                    "
+                  >
+                    <svg
+                      width="50px"
+                      height="50px"
+                      viewBox="0 0 60 60"
+                      version="1.1"
+                      xmlns="https://www.w3.org/2000/svg"
+                      xmlns:xlink="https://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          transform="translate(-511.000000, -20.000000)"
+                          fill="#000000"
+                        >
+                          <g>
+                            <path
+                              d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div
+                      style="
+                        color: #3897f0;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 550;
+                        line-height: 18px;
+                      "
+                    >
+                      View this post on Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      margin-bottom: 14px;
+                      align-items: center;
+                    "
+                  >
                     <div>
-                        <img src="img/whatsapp.svg" class="contactlogo">
-                        <p class="contacthead">Whatsapp</p>
-                        <p class="textforcontact">+994502059939</p>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          height: 12.5px;
+                          width: 12.5px;
+                          transform: translateX(0px) translateY(7px);
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          height: 12.5px;
+                          transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                          width: 12.5px;
+                          flex-grow: 0;
+                          margin-right: 14px;
+                          margin-left: 2px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          height: 12.5px;
+                          width: 12.5px;
+                          transform: translateX(9px) translateY(-18px);
+                        "
+                      ></div>
                     </div>
-                    <div>
-                        <img src="img/email.svg" class="contactlogo">
-                        <p class="contacthead">Email</p>
-                        <p class="textforcontact">huseyn1996@gmail.com</p>
+                    <div style="margin-left: 8px">
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 20px;
+                          width: 20px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          width: 0;
+                          height: 0;
+                          border-top: 2px solid transparent;
+                          border-left: 6px solid #f4f4f4;
+                          border-bottom: 2px solid transparent;
+                          transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                        "
+                      ></div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 contactme">
-                    <p class="contactmetext">Message me</p>
-                    <form action="" class="form">
-                        <input type="text" class="inputs" placeholder="Name*">
-                        <input type="text" class="inputs" placeholder="Surname*">
-                        <input type="email" class="inputs" placeholder="Email*">
-                        <textarea name="content" id="textarea" placeholder="Content*"></textarea>
-                        <button type="submit" class="btnsend">Send</button>
-                    </form>
-                </div>
-            </div>
+                    <div style="margin-left: auto">
+                      <div
+                        style="
+                          width: 0px;
+                          border-top: 8px solid #f4f4f4;
+                          border-right: 8px solid transparent;
+                          transform: translateY(16px);
+                        "
+                      ></div>
+                      <div
+                        style="
+                          background-color: #f4f4f4;
+                          flex-grow: 0;
+                          height: 12px;
+                          width: 16px;
+                          transform: translateY(-4px);
+                        "
+                      ></div>
+                      <div
+                        style="
+                          width: 0;
+                          height: 0;
+                          border-top: 8px solid #f4f4f4;
+                          border-left: 8px solid transparent;
+                          transform: translateY(-4px) translateX(8px);
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      flex-grow: 1;
+                      justify-content: center;
+                      margin-bottom: 24px;
+                    "
+                  >
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        margin-bottom: 6px;
+                        width: 224px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        width: 144px;
+                      "
+                    ></div></div
+                ></a>
+                <p
+                  style="
+                    color: #c9c8cd;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 0;
+                    margin-top: 8px;
+                    overflow: hidden;
+                    padding: 8px 0 7px;
+                    text-align: center;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  "
+                >
+                  <a
+                    href="https://www.instagram.com/p/CV62eOMrTlX/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: normal;
+                      line-height: 17px;
+                      text-decoration: none;
+                    "
+                    target="_blank"
+                    >A post shared by @yusifov.coding</a
+                  >
+                </p>
+              </div>
+            </blockquote>
+          </div>
         </div>
+      </div>
     </section>
-    <div id="backtotop" onclick="scrollToTop()"><img src="img/top.svg" height="35px" width="35px"></div>
-    <footer style="overflow: hidden;">
-        <div class="container-fluid">
-            <div class="row rowfooter">
-                <div class="col-lg-4 col-md-6 col-sm-12 logofooter">
-                    <a href="index.html"><img src="img/HY_black.png" height="70px" width="100px"></a>
-                    <meta name="keywords" content="Huseyn Yusifov">
-                    <p class="copyright">© 2020 Huseyn Yusifov. All rights reserved. </p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 servicesfooter">
-                    <ul>
-                        <li class="lifirst">Services</li>
-                        <li>Web Design</li>
-                        <li>Responsiveness</li>
-                        <li>Web Development</li>
-                        <li>Photography</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 socialfooter">
-                    <a href=""> <img src="img/facebook.png" width="35px" height="35px"></a>
-                    <a href=""> <img src="img/instagram.svg" width="35px" height="35px"></a>
-                    <a href=""> <img src="img/linkedin.svg" width="35px" height="35px"></a>
-                    <a href=""> <img src="img/github.svg" width="35px" height="35px"></a>
-                </div>
+    <section class="sections">
+      <div class="container">
+        <div class="row" id="contacts">
+          <div class="col-lg-12 col-md-12 col-sm-12 contactme">
+            <p class="head">Message me</p>
+            <div class="aboutme">
+              <p>Got questions? Don't hesitate to email me anytime!</p>
             </div>
+            <a href="mailto:huseyn1996@gmail.com">
+              <button class="btnContact">Send Email</button>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+    <div id="backtotop" onclick="scrollToTop()">
+      <img src="img/top.svg" height="35px" width="35px" />
+    </div>
+    <footer class="sections">
+      <div class="container-fluid">
+        <div class="row rowfooter">
+          <div class="col-lg-6 col-md-6 col-sm-12 logofooter">
+            <a href="/"
+              ><img src="img/HY_black.png" height="50px" width="80px"
+            /></a>
+            <p class="copyright" id="copyright"></p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 socialfooter">
+            <a href="https://www.facebook.com/huseynfy" target="_blank">
+              <img src="img/facebook.svg" width="35px" height="35px"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/huseyn-yusifov/"
+              target="_blank"
+            >
+              <img src="img/linkedin.svg" width="37px" height="37px"
+            /></a>
+            <a href="https://www.instagram.com/yusifov.coding/" target="_blank">
+              <img src="img/insta.svg" width="37px" height="37px"
+            /></a>
+            <a href="https://github.com/huseynfy" target="_blank">
+              <img src="img/github.svg" width="35px" height="35px"
+            /></a>
+          </div>
+        </div>
+      </div>
     </footer>
+    <script async src="//www.instagram.com/embed.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
